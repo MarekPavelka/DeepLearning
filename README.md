@@ -1,2 +1,2 @@
 # DeepLearning
-custom made tutorials
+custom made explanations
