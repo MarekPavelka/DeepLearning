@@ -12,6 +12,7 @@ namespace Generics
         {
             var myVal = MyValue.Create("abc");
             var myValue = new MyValue<string>("abc");
+            var ferko = new[] {1, 2, 3};
         }
     }
 

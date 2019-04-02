@@ -12,11 +12,13 @@ namespace ExtensionMethods
         {
             var x = new List<int>();
             var y = new List<string>();
+            var z = new int[2];
 
             var result = x.Bullshit("fero"); // usage
             var result2 = y.Bullshit("jozef");
 
             ListExtensions.Bullshit(x, "fero"); // replaced after compilation
+            var ferko = MyList2.CreateListOfT("");
         }
     }
 
@@ -25,6 +27,14 @@ namespace ExtensionMethods
         public static int Bullshit<T>(this List<T> list, string name)
         {
             return 0;
+        }
+    }
+
+    class MyList2
+    {
+        public static List<T> CreateListOfT<T>(T value)
+        {
+            return new List<T>();
         }
     }
 
